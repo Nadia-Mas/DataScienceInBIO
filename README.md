@@ -1,6 +1,6 @@
 # 🧬 Data Science Methods Evaluation: Assumptions in Diverse Datasets
 
-![DNA animation](https://media.giphy.com/media/3o7btMCltyDvSgF92E/giphy.gif)
+![Descriptive Alt Text](URL_of_the_GIF)
 
 ## Project Plan – Submission for Thursday, April 10
 
