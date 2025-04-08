@@ -55,7 +55,7 @@ We will analyze the **theoretical assumptions** behind each method, including bu
 
 ---
 
-![Bioinformatics sticker](https://media.giphy.com/media/40QpFANR6iPMe/giphy.gif)
+
 
 ### 🛠️ Tools and Libraries
 
@@ -67,4 +67,3 @@ We will analyze the **theoretical assumptions** behind each method, including bu
 
 _This README will evolve throughout the project as we finalize our method(s), datasets, and results._
 
-![End DNA gif](https://media.giphy.com/media/l2JhB9X3AZkpiZk1G/giphy.gif)
