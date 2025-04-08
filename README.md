@@ -1,6 +1,6 @@
 # 🧬 Data Science Methods Evaluation: Assumptions in Diverse Datasets
 
-![Let's Get Started](https://tenor.com/uamW.gif)
+![Let's Get Started](https://media1.tenor.com/m/r3XdvPsAV3kAAAAd/despicable-me-minions.gif)
 
 ## Project Plan – Submission for Thursday, April 10
 
