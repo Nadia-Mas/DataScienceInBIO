@@ -1,6 +1,6 @@
 # 🧬 Data Science Methods Evaluation: Assumptions in Diverse Datasets
 
-![Descriptive Alt Text](URL_of_the_GIF)
+![Project Launch Rocket](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
 
 ## Project Plan – Submission for Thursday, April 10
 
