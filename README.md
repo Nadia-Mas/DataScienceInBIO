@@ -12,11 +12,11 @@ This project is part of the **Data Science in Bio** course offered at the **Univ
 
 ---
 
-### 🔍 Project Overview
+### 🧬 DSinBIO Project – Evaluating ExcelFormer on Biological Datasets
 
-For this project, we will pursue **Option 2**: an in-depth evaluation of one or more data science methods applied to diverse datasets—spanning both biological and non-biological domains. Our primary goal is to critically examine the **assumptions** underlying selected data science techniques and how those assumptions hold (or fail) in practice across different types of data.
+This project explores whether **ExcelFormer**, a deep learning model, can outperform traditional machine learning models in predicting binary disease outcomes such as **distant metastasis in breast cancer** using real-world gene expression datasets.
 
-We aim to highlight the **impact of assumption violations** on results and interpretations, providing clear demonstrations through visualization and analysis.
+---
 
 ---
 
@@ -25,45 +25,78 @@ We aim to highlight the **impact of assumption violations** on results and inter
 ### 👥 Team Composition
 
 - **Nadia (Fatemeh Sadat) Masoumi**
-- **Patrick McLaughlin**
 
-### 🧪 Planned Methods
+## 📁 Datasets
 
-We are considering the following methods for in-depth evaluation:
+We use four datasets representing both **microarray** and **scRNA-seq** gene expression profiles:
 
-- **t-SNE** for dimensionality reduction and visualization  
-- **t-test** and/or **DESeq2** for differential analysis
+| Dataset   | Type               | Patients | Genes |
+|-----------|--------------------|----------|-------|
+| **ACES**      | Microarray         | 1616     | 12,750 |
+| **METABRIC**  | Microarray         | 1884     | 20,182 |
+| **NKI**       | Microarray         | 295      | 11,658 |
+| **TCGA**      | scRNA-seq          | 5580     | 13,446 (protein-coding) |
 
-We will analyze the **theoretical assumptions** behind each method, including but not limited to:
-
-- Distributional assumptions (e.g., normality for t-test)
-- Distance preservation (for t-SNE)
-- Dispersion modeling in count data (for DESeq2)
-
----
-
-### 📁 Possible Data Sources
-
-- **Biological Datasets**
-  - GEO (Gene Expression Omnibus)
-  - TCGA (The Cancer Genome Atlas)
-
-- **Non-Biological Datasets**
-  - MNIST and Fashion-MNIST (image data)
-  - UCI Machine Learning Repository datasets (e.g., Iris)
-  - Synthetic datasets from `scikit-learn` to create controlled violations of assumptions
+All datasets are **labeled with binary outcomes** indicating metastasis status within 5 years.
 
 ---
 
+## 🤖 Models to be Compared
 
+### Deep Learning Models
+- `ExcelFormer`
+- `MLP` (Multilayer Perceptron)
 
-### 🛠️ Tools and Libraries
-
-- Python (NumPy, pandas, scikit-learn, matplotlib, seaborn)
-- Jupyter Notebooks
-- Git and GitHub for version control and collaboration
+### Traditional ML Models
+- `Random Forest`
+- `Support Vector Machine`
+- `Gradient Boosting`
+- `Logistic Regression`
 
 ---
+
+## 📊 Evaluation Metrics
+
+Each model will be evaluated using:
+
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-score**
+- **AUC (Area Under the Curve)**
+
+---
+
+## 🧪 Methodology
+
+1. Preprocess and normalize each dataset.
+2. Apply **stratified splitting** to preserve class distributions in train/test sets.
+3. Handle **class imbalance** using:
+   - `class_weight='balanced'`
+   - `SMOTE`
+   - `SMOTE + Tomek Links`
+   - `Borderline-SMOTE`
+4. Train all models on each dataset and evaluate with the listed metrics.
+5. Compare results across datasets and identify:
+   - Where ExcelFormer excels.
+   - When traditional models are preferable.
+6. Analyze results in the context of:
+   - Sample size
+   - Feature dimensionality
+   - Class balance
+   - Model complexity
+
+---
+
+## 🔍 Outcomes Expected
+
+- Determine the robustness of ExcelFormer across small and large gene expression datasets.
+- Understand the model's generalizability across microarray and scRNA-seq data.
+- Provide guidance for researchers choosing between deep and classical ML models in bioinformatics.
+
+---
+
+
 
 _This README will evolve throughout the project as we finalize our method(s), datasets, and results._
 
